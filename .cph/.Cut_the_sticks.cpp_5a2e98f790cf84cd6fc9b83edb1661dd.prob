@@ -1,0 +1,1 @@
+{"name":"Local: Cut_the_sticks","url":"c:\\Users\\enduangi\\Desktop\\vs code all programs\\Cut_the_sticks.cpp","tests":[{"id":1625243586471,"input":"6\n5 4 4 2 2 8","output":"6\n4\n2\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\enduangi\\Desktop\\vs code all programs\\Cut_the_sticks.cpp","group":"local","local":true}

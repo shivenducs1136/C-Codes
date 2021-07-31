@@ -1,0 +1,1 @@
+cout<<greatest(a,b,c,d)<<endl;

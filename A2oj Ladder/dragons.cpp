@@ -3,23 +3,23 @@ using namespace std;
 #define dd long long int 
 int main(){
 
-    dd n,s; 
-    cin>>s>>n; 
-    pair<dd , dd> p[n];
-    dd q;  
-    for(dd i  =0 ; i< n; i++){
-        cin>>q; 
-        p[i].first = q;
-        cin>>q;  
-        p[i].second =q;
-    }
-dd count =0; 
-    for(dd i =0;i<n;i++){
-        if(s>p[i].first){
-            s = s +p[i].second;count++;   
+   dd s,n,count=0; 
+   cin>>s>>n;
+   int c = n;  
+    vector<pair<int,int>> v;
+     for (int i=0; i<n; i++){
+         int a,b; 
+         cin>>a>>b; 
+        v.push_back( make_pair(a,b));
+     }
+    sort(v.begin(), v.end());
+    for(int i=0;i<n;i++){
+        if(v[i].first<s){
+            s=s+v[i].second; 
+            count++; 
         }
     }
-    if(count==n){
+    if(count == c){
         cout<<"YES"<<endl; 
     }
     else{

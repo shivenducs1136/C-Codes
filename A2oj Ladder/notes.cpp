@@ -23,7 +23,7 @@ int main(){
             }
         }
     }
-    cout<<count-1<<endl; 
+    cout<<count<<endl; 
 
     return 0; 
 }

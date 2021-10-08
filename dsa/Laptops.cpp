@@ -13,12 +13,10 @@ int main(){
         cin>>p[i].second; 
     }
     for(i=0;i<n;i++){
-        if(p[i].second>p[i+1].second && p[i].first < p[i+1].first){
+        if(p[i].second>p[i+1].second && p[i].first < p[i+1].first && i+1<n){
             cout<<"Happy Alex"<<endl; 
         }
-        else{
-            cout<<"Poor Alex"<<endl; 
-        }
+        
     }
 
     return 0; 

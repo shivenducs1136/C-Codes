@@ -8,6 +8,11 @@
         "regex": "cpp",
         "sstream": "cpp",
         "stdio.h": "c",
-        "vector": "cpp"
+        "vector": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp"
     }
 }

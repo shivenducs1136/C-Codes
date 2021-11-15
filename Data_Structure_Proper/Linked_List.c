@@ -219,16 +219,16 @@ void reverse_a_linkedlist(){
 }
 void remove_duplicates(){
     struct node *ptr , *ctr;
-    int count =0,i=0;  
-        cusotm_insert_at_end(10); 
-        cusotm_insert_at_end(20); 
-        cusotm_insert_at_end(30); 
+    int count =0,i=0;
+        cusotm_insert_at_end(10);
+        cusotm_insert_at_end(20);
+        cusotm_insert_at_end(30);
         cusotm_insert_at_end(40);
         cusotm_insert_at_end(10);
         cusotm_insert_at_end(20);
         cusotm_insert_at_end(10);
         cusotm_insert_at_end(50);
-        custom_print(); 
+        custom_print();
     for(ptr = shead ; ptr->next!=NULL;ptr =ptr->next){
         for(ctr = shead ; ctr->next!=NULL;ptr =ctr->next){
             if(ptr->data == ctr->data){

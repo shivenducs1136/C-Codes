@@ -42,6 +42,7 @@ void dequeue(){
         front++; 
     }
 }
+
 void print(){
     int i; 
     if(front >= 0 && rear <= 9){

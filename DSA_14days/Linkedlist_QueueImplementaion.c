@@ -31,6 +31,17 @@ void dequeue(){
         return ;  
     }
 }
+void reverse(){
+    struct node * curr = head; 
+    struct node * prev = NULL; 
+    while(curr!=NULL){
+        struct node * nexty = curr->next; 
+        curr->next = prev; 
+        prev = curr;
+        curr = nexty;  
+    }
+    head = prev; 
+}
 void print(){
     struct node * ptr; 
     ptr = head; 
@@ -74,6 +85,17 @@ int main(){
     print();
     dequeue();
     print();
-
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
+    enqueue(40);
+    enqueue(50);
+    enqueue(60);
+    enqueue(70);
+    enqueue(80);
+    enqueue(90);
+    print();
+    reverse(); 
+    print();
     return 0; 
 }

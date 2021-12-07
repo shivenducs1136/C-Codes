@@ -1,22 +1,30 @@
-   if(maxprofit == 0){
-         for(i =0; i<n; i++ ){
-            if(x<prices[i]){
-                x = prices[i];
-                ix = i; 
-            }
+#include<bits/stdc++.h>
+using namespace std; 
+int main(){
+    int n; 
+    cin>>n; 
+    int arr[n]; 
+    int i,j,k; 
+    for(i=0;i<n;i++){
+        cin>>arr[i]; 
     }
-    // x , ix are max elements here
-     for(k=ix-1;k>=0;k--){
-        for(i=ix-1;i>=0;i--){
-            if(prices[i]>=prices[i+1] && (i+1)>=0){
-                j = prices[i]; 
-                prices[i] = prices[i+1]; 
-                prices[i+1] = j; 
+    cout<<"You ENTERED"<<endl;
+    for(i=0;i<n;i++){
+        cout<<arr[i]<<" "; 
+    } 
+    cout<<endl; 
+    for(k=0;k<n;k++){
+        for(i=0;i<n;i++){
+            if(arr[i]<=arr[i+1] && (i+1)<n){
+                j = arr[i]; 
+                arr[i] = arr[i+1]; 
+                arr[i+1] = j; 
             }
-        } 
         }
-          for(i=0;i<n;i++){
-        cout<<prices[i]<<" ";  
     }
-    maxprofit = x - prices[0];
-    }
+    cout<<"Sorted Array "<<endl ; 
+    for(i=0;i<n;i++){
+        cout<<arr[i]<<" "; 
+    } 
+    return 0; 
+}

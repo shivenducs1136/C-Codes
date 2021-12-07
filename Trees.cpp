@@ -63,6 +63,7 @@ int maximum(node * root,int data){
         return max(maximum(root->left,root->left->data),maximum(root->right,root->right->data)); 
     }
 }
+
 int main(){
     node * root; 
     root = new node(10); 
